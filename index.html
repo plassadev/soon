@@ -5,56 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plassa – Coming Soon</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
       height: 100%;
       background-color: #0f194c;
-      font-family: 'Ubuntu', sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .container {
+    .svg-wrapper {
       width: 100%;
-      max-width: 1200px;
-      padding: 20px;
+      height: 100%;
     }
     svg {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: contain;
       display: block;
     }
+    text {
+      font-family: 'Ubuntu', sans-serif;
+    }
     @media (max-width: 768px) {
-      .cls-2 {
-        font-size: 48px !important;
-      }
-      .cls-1 {
-        font-size: 28px !important;
-      }
+      text.cls-2 { font-size: 48px !important; }
+      text.cls-1 { font-size: 28px !important; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- SVG Starts -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2027.06 1466.68">
+  <div class="svg-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2027.06 1466.68" preserveAspectRatio="xMidYMid meet">
       <defs>
         <style>
           .cls-1 {
             font-size: 47.35px;
             fill: #fff;
-            font-family: Ubuntu-BoldItalic, Ubuntu, sans-serif;
+            font-family: Ubuntu-BoldItalic, Ubuntu;
             font-style: italic;
             font-weight: 700;
           }
           .cls-2 {
             font-size: 77.45px;
             fill: #fff;
-            font-family: Ubuntu-BoldItalic, Ubuntu, sans-serif;
+            font-family: Ubuntu-BoldItalic, Ubuntu;
             font-style: italic;
             font-weight: 700;
           }
@@ -104,7 +99,6 @@
         </text>
       </g>
     </svg>
-    <!-- SVG Ends -->
   </div>
 </body>
 </html>
