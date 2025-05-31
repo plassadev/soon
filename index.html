@@ -5,49 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centered SVG Logo</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #0f194c;
-      height: 100%;
-      width: 100%;
+      box-sizing: border-box;
     }
 
-    .container {
+    body, html {
+      height: 100%;
+      width: 100%;
+      background-color: #0f194c;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      width: 100vw;
     }
 
     .logo {
-      width: 50%;
-      max-width: 300px;
+      max-width: 80vw;
+      max-height: 80vh;
+      width: auto;
       height: auto;
-    }
-
-    @media (max-width: 600px) {
-      .logo {
-        width: 70%;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Inline your SVG here -->
-    <svg class="logo" id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357.77 434.37">
-      <defs>
-        <style>
-          .cls-1 { fill: #8e60e8; fill-rule: evenodd; }
-          .cls-2 { fill: #fff; }
-          .cls-3 { fill: #2abbd3; }
-        </style>
-      </defs>
-      <!-- Keep the rest of your SVG content here... -->
-      <!-- Truncated for brevity -->
-    </svg>
-  </div>
+  <img src="https://www.plassa.dev/plassa.svg" alt="Plassa Logo" class="logo" />
 </body>
 </html>
